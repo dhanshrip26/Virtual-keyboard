@@ -1,0 +1,87 @@
+/* bowser style override */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* styling body  */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background:#0a0f1c; */
+    height: 135vh;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+/* parent of a button  */
+.container{
+    display: grid;
+    grid-template-columns: repeat(15,50px);
+    grid-gap: 5px;
+    background:pink;
+    padding: 15px;
+    border-radius:12px;
+    border: 1px solid #1e293b;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+/* specific button Styling  */
+button{
+    font-family: 'Times New Roman', Times, serif;
+    background:pink;
+    border: 2px solid #121212;
+    border-radius: 6px;
+    line-height: 50px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.4);
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+
+}
+/* increasing button size */
+.capslock,.entre,.shift,.shift1{
+    grid-column: span 2;
+}
+.ctrl{
+    grid-column: span 2;
+}
+.space{
+    grid-column: span 6;
+}
+.backspace{
+    grid-column: span 2;
+}
+/* button hover  */
+button:hover{
+    background:#223041;
+    color:black;
+}
+
+#text-field{
+    width: 35rem;
+    height: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    top: 14rem;   
+}
+span{
+    position: absolute;
+    top: 5rem;
+    font-size: 35px;
+    font-weight: 1000;
+}
+p{
+    position: absolute;
+  top: 22%;
+  left: 38%;
+  color: deeppink;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  
+}
